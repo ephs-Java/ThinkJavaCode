@@ -1,12 +1,12 @@
 /**
- * Examples from Chapter 7.
+ * Generating tables; encapsulation and generalization.
  */
 public class Tables {
 
     public static void example() {
         int i = 1;
         while (i < 10) {
-            double x = (double) i;
+            double x = i;
             System.out.println(x + "   " + Math.log(x));
             i = i + 1;
         }
@@ -15,7 +15,7 @@ public class Tables {
     public static void example2() {
         int i = 1;
         while (i < 10) {
-            double x = (double) i;
+            double x = i;
             System.out.println(x + "   " + Math.log(x) / Math.log(2));
             i = i + 1;
         }
@@ -25,7 +25,7 @@ public class Tables {
         final double LOG2 = Math.log(2);
         int i = 1;
         while (i < 100) {
-            double x = (double) i;
+            double x = i;
             System.out.println(x + "   " + Math.log(x) / LOG2);
             i = i * 2;
         }
@@ -153,4 +153,5 @@ public class Tables {
         System.out.println("printTable4");
         printTable4(6);
     }
+
 }
